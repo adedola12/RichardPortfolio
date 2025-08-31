@@ -1,4 +1,3 @@
-// src/assets/assets.js (or .ts)
 import logo1 from "./logo1.png";
 import ADLMLogo from "./ADLMLogo.png";
 import AdobeApps from "./AdobeApps.png";
@@ -12,6 +11,7 @@ import PSLogo from "./PSLogo.png";
 import TradeflowLogo from "./TradeflowLogo.png";
 import VeriLogo from "./VeriLogo.png";
 import Grid from "./Grid.png";
+import ownImg from "./ownImg.png";
 
 export const assets = {
   logo1,
@@ -27,4 +27,5 @@ export const assets = {
   TradeflowLogo,
   VeriLogo,
   Grid,
+  ownImg,
 };
