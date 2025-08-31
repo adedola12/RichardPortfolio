@@ -12,6 +12,8 @@ import TradeflowLogo from "./TradeflowLogo.png";
 import VeriLogo from "./VeriLogo.png";
 import Grid from "./Grid.png";
 import ownImg from "./ownImg.png";
+import ownImg1 from "./ownImg1.jpg";
+import ownImg2 from "./ownImg2.png";
 
 export const assets = {
   logo1,
@@ -28,4 +30,6 @@ export const assets = {
   VeriLogo,
   Grid,
   ownImg,
+  ownImg1,
+  ownImg2,
 };
