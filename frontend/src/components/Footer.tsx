@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Link, NavLink } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { assets } from "../assets/assets";
