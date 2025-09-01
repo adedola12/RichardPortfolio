@@ -28,18 +28,18 @@ const CAPABILITIES = [
 const ROW1 = [
   { src: icons.slack, label: "Slack" },
   { src: icons.drivelogo, label: "Google Drive" },
-  { src: icons.group24, label: "Figma-like" },
-  { src: icons.behance, label: "Behance" },
   { src: icons.ico, label: "Design Tool" },
+  { src: icons.behance, label: "Behance" },
+  { src: icons.zoom, label: "Zoom" },
   { src: icons.notion, label: "Notion" },
   { src: icons.teams, label: "Microsoft Teams" },
-  { src: icons.adobe, label: "Adobe" },
-  { src: icons.adobeI, label: "Adobe InDesign Badge" },
-  { src: icons.openAI, label: "OpenAI" },
-  { src: icons.behance, label: "Behance Alt" },
-  { src: icons.illustr, label: "Adobe Illustrator" },
-  { src: icons.photoshop, label: "Adobe Photoshop" },
-  { src: icons.adobeI, label: "Adobe InDesign" },
+  { src: icons.ico1, label: "Adobe" },
+  { src: icons.figma, label: "Figma" },
+  { src: icons.powerpoint, label: "Powerpoint" },
+  { src: icons.word, label: "Word" },
+  { src: icons.excel, label: "Excel" },
+  { src: icons.note, label: "Note" },
+  { src: icons.outlook, label: "Outlook" },
 ];
 
 // Google / misc tools line
@@ -50,7 +50,7 @@ const ROW2 = [
   { src: icons.docs, label: "Google Docs" },
   { src: icons.drivelogo, label: "Google Drive" },
   { src: icons.meet, label: "Google Meet" },
-  { src: icons.note, label: "Google Keep" },
+  { src: icons.notes, label: "Google Keep" },
   { src: icons.sheet, label: "Google Sheets" },
   { src: icons.acrobat, label: "Adobe Acrobat" },
   { src: icons.cloud, label: "Adobe Cloud" },
@@ -74,7 +74,7 @@ const ICON_HOVER =
 
 const Tools: React.FC = () => {
   return (
-    <section className="relative mx-auto max-w-[1200px] px-4 py-16 sm:py-20">
+    <section className="relative mx-auto max-w-[1200px] px-4 py-6 sm:py-10">
       {/* Title */}
       <p className="mb-8 text-center text-sm text-white/90">
         Here are a few things I can do...
@@ -85,7 +85,7 @@ const Tools: React.FC = () => {
         {CAPABILITIES.map((label) => (
           <span
             key={label}
-            className="select-none rounded-full border border-white/60 px-4 py-2 text-sm text-white/95
+            className="select-none rounded-md border border-white/60 px-4 py-2 text-sm text-white/95
                        shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]
                        hover:border-white hover:bg-white/5 transition"
           >
@@ -111,7 +111,7 @@ const Tools: React.FC = () => {
               title={label}
               loading="lazy"
               className={
-                "h-10 w-10 sm:h-12 sm:w-12 object-contain drop-shadow-[0_0_8px_rgba(0,0,0,0.35)] " +
+                "h-8 w-8 sm:h-10 sm:w-10 object-contain opacity-95 drop-shadow-[0_0_8px_rgba(0,0,0,0.35)] " +
                 ICON_HOVER
               }
             />
@@ -119,7 +119,7 @@ const Tools: React.FC = () => {
         </div>
 
         {/* Row 2 */}
-        <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-10">
+        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
           {ROW2.map(({ src, label }, i) => (
             <img
               key={`r2-${i}`}

@@ -33,6 +33,8 @@ import excel from "./icons/excel.png";
 import gmail from "./icons/gmail.svg";
 import Group24 from "./icons/Group 24.png";
 import ico from "./icons/ico.png";
+import ico1 from "./icons/ico1.png";
+import figma from "./icons/figma.png";
 import illustr from "./icons/illustr.png";
 import meet from "./icons/meet.svg";
 import note from "./icons/note.png";
@@ -82,6 +84,8 @@ export const icons = {
   docs,
   drivelogo,
   excel,
+  figma,
+  ico1,
   gmail,
   group24: Group24, // alias key without space
   ico,
