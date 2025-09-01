@@ -2,7 +2,13 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { assets } from "../assets/assets";
 
-const linkClass = ({ isActive }) =>
+type NavLinkClassArgs = {
+  isActive: boolean;
+  isPending: boolean;
+  isTransitioning?: boolean;
+};
+
+const linkClass = ({ isActive }: NavLinkClassArgs) =>
   [
     "block px-2 py-1 text-sm transition-colors",
     isActive ? "text-white" : "text-gray-300 hover:text-white",
