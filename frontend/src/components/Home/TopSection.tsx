@@ -1,4 +1,4 @@
-import { assets } from "../../assets/assets";
+import { assets } from "../../assets/assets.js";
 
 const partners = [
   { src: assets.ADLMLogo, alt: "ADLM Studio" },
