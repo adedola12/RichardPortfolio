@@ -117,7 +117,9 @@ export default function ProjectHighlight() {
 
   // compute card width so ~N cards fit; we add some inner padding on the viewport
   // to create the "half-visible" first/last edge feel.
-  const cardWidth = `calc((100% - ${GAP * (visible - 1)}px) / ${visible})`;
+  const cardWidth = `calc((100% - ${
+    GAP * (visible - 1)
+  }px) / ${visible} + 28px)`;
 
   // keep index inside bounds when user changes category
   useEffect(() => {
